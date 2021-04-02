@@ -16,7 +16,8 @@ print(f'Muito bem, vou finalizar sua compra, sua lista é {lista2}')
 
 i=0
 while i < len(lista2):
-    lista[i]=lista[i].append('comprar') 
+    lista2[i]= 'comprar ' + lista2[i] + 'Vtex ' 
+    i+=1
 
 i=0
 while i < len(lista2):
