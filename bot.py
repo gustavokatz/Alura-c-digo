@@ -1,4 +1,4 @@
-#from googlesearch import search
+from googlesearch import search
 print ('\tOlá, bem vindo ao Bot Vtex\n')
 
 nome = input('Como você gostaria de ser chamado?\n')
@@ -14,15 +14,16 @@ while preparo.lower() == 'sim':
 print(f'Muito bem, vou finalizar sua compra, sua lista é {lista2}')
 
 
+i=0
+while i < len(lista2):
+    lista[i]=lista[i].append('comprar') 
 
-#list_of_queries = lista2
-#results = []
-#
-#for query in list_of_queries:
-#    results.append(search(query, tld="co.in", num=10, stop=1, pause=2))
-
-#
-#print(results)
+i=0
+while i < len(lista2):
+    query = lista2[i]
+    i+=1
+    for j in search(query, tld="co.in", num=4, stop=4, pause=2, lang = 'pt'):
+        print(j)
 
 
 
