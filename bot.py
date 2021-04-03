@@ -2,7 +2,7 @@
 # Para as instalar, basta digitar pip install (biblioteca)
 
 
-# Adiquirição de informação
+# Aquisição de informação
 from googlesearch import search
 print ('Olá, bem vindo ao Bot Vtex\n')
 nome = input('Como você gostaria de ser chamado?\n')
